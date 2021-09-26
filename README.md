@@ -4,14 +4,17 @@ inheritance and code reuse are close cousins
 
 ## code: bst: a storage class, a node class
 -- show node snippets, method signatures for sortedstorage
--- show class hierarchy drawing
 
-what kind of data is being stored by the node?
+visually, we would have an inheritance tree like this one:
+-- show class hierarchy drawing of sorted storage
+
+what kind of data can eventually be stored by the node?
 - IntegerNode
 - StringNode
 - SomethingElseNode
 - ... and so on
-with each new data type requirement a new class need to be defined 
+
+at the storage level a new class also eventually need to be defined 
 - SortedSetStorage
 - SortedNonSetStorage
 - SortedSetStorageWithNulls
@@ -87,7 +90,7 @@ are not that closely related, e.g. String, Integer, SortedStorage, Node?
   
 # when to use interfaces
 
-## code:  Honkable, Pilotable, plane, airbus, a321
+## code: plane, airbus, a321
 
 - as in abstract classes, you want to specify a behaviour that MUST be followed by
   classes that implement the interface, e.g. Comparable, Clonable, Serializable
@@ -97,7 +100,7 @@ are not that closely related, e.g. String, Integer, SortedStorage, Node?
 
 # when not to use interfaces
 
-#code: car, honda, accord
+## code: car, honda, accord
 
 - when you need non-public or non-static fields in the api
 - when you need protected access on the methods of the api

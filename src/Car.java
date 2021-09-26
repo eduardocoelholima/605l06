@@ -1,4 +1,4 @@
-abstract public class Car implements Vehicable, Honkable, Driveable {
+abstract public class Car implements Honkable, Driveable {
     int numberOfWheels = 4;
 
     final String vehicleType = "car";
@@ -7,7 +7,7 @@ abstract public class Car implements Vehicable, Honkable, Driveable {
         System.out.println("car honk");
     }
 
-    public String getVehicleType(){
+    protected String getVehicleType(){
         return vehicleType;
     }
 }

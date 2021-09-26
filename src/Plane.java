@@ -1,11 +1,11 @@
-abstract public class Plane implements Vehicable, Honkable, Pilotable {
+abstract public class Plane implements Honkable, Pilotable {
     final String vehicleType = "airplane";
 
     public void honk() {
         System.out.println("airplane honk");
     }
 
-    public String getVehicleType(){
+    protected String getVehicleType(){
         return vehicleType;
     }
 }

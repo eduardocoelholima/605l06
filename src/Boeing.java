@@ -10,10 +10,6 @@ abstract public class Boeing extends Plane {
         return vehicleType;
     }
 
-    public int checkWarranty() {
-        return 10;
-    }
-
     abstract boolean isThisABoeing();
 
 }

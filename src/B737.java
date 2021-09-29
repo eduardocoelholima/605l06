@@ -14,4 +14,8 @@ public class B737 extends Boeing implements Warrantable{
         return true;
     };
 
+    public int checkWarranty() {
+        return 10;
+    }
+
 }

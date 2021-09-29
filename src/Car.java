@@ -7,7 +7,13 @@ abstract public class Car implements Honkable, Driveable {
         System.out.println("car honk");
     }
 
-    protected String getVehicleType(){
+    protected String getVehicleType()
+    {
         return vehicleType;
     }
+
+//    protected abstract String getVehicleType();
+//    {
+//        return vehicleType;
+//    }
 }
